@@ -1,11 +1,23 @@
 import React from "react";
 import { render } from "react-dom";
 
+import { Header } from "./components/Header";
+import { Home } from "./components/Home";
+
 class App extends React.Component {
     render() {
         return (
-            <div>
-                <h1>Hello World</h1>
+            <div className="container">
+                <div className="row">
+                  <div className="col-md-12 col-sm-12">
+                    <Header/>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-12 col-sm-12">
+                    <Home/>
+                  </div>
+                </div>
             </div>
         );
     }
